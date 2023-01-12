@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-
+import SwaggerUI from 'swagger-ui-react';
+import "swagger-ui-react/swagger-ui.css";
 function App() {
+  //'https://personal-5zk9yzhc.outsystemscloud.com/SwaggerProxy/rest/ServiceCatalog/230a2680-3474-47aa-a39d-56852edbec7f/swagger.json'
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SwaggerUI url='https://askme-j84d.onrender.com/api' />
     </div>
   );
 }

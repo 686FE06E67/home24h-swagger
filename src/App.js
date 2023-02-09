@@ -1,10 +1,15 @@
 import SwaggerUI from 'swagger-ui-react';
 import "swagger-ui-react/swagger-ui.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css"
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 function App() {
-  //'https://personal-5zk9yzhc.outsystemscloud.com/SwaggerProxy/rest/ServiceCatalog/230a2680-3474-47aa-a39d-56852edbec7f/swagger.json'
   return (
     <div className="App">
+      <Navbar />
       <SwaggerUI url="https://openai.adaptable.app/api" />
+      <Footer />
     </div>
   );
 }
